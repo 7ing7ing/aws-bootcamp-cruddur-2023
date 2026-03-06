@@ -20,6 +20,8 @@ services:
       # Local
       REACT_APP_BACKEND_URL: "http://localhost:4567"
       CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+      HOST: "0.0.0.0"
     build: ./frontend-react-js
     ports:
       - "3000:3000"
