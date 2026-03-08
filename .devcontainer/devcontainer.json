@@ -5,7 +5,23 @@
 {
 	"name": "Ona",
 	"image": "mcr.microsoft.com/devcontainers/universal:latest",
-    "customizations": {
+	
+	"forwardPorts": [3000, 4567, 2000],
+
+	"portsAttributes": {
+		"3000": {
+			"label": "frontend",
+			"onAutoForward": "openBrowser"
+		},
+		"4567": {
+			"label": "backend"
+		},
+		"2000": {
+			"label": "xray-daemon"
+		}
+	},
+
+	"customizations": {
 		"vscode": {
 			"extensions": [
 				"42Crunch.vscode-openapi"
