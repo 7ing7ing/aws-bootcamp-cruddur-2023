@@ -10,3 +10,9 @@ tasks:
       cd $THEIA_WORKSPACE_ROOT
     triggeredBy:
       - postEnvironmentStart
+  react-js:
+    name: "NPM install"
+    command: |
+      cd frontend-react-js
+      npm i
+
