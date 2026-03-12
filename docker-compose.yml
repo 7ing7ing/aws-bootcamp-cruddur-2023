@@ -13,6 +13,9 @@ services:
       # AWS_XRAY_URL: "*4567--019cb315-0c56-751a-9a8d-541b1d1d7a39.eu-central-1-01.gitpod.dev/*"
       AWS_XRAY_URL: "*http://localhost:4567*"
       AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
+      AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
     build: ./backend-flask
     ports:
       - "4567:4567"
